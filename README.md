@@ -2,13 +2,15 @@
 
 <div align="center">
 
-![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=vercel)
+[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=vercel)](https://my-portfolio-zeta-snowy-87.vercel.app/)
 ![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-97%25-blue?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styled-38BDF8?style=for-the-badge&logo=tailwindcss)
 ![Vite](https://img.shields.io/badge/Vite-Powered-646CFF?style=for-the-badge&logo=vite)
 
 > ✨ **A fully responsive, modern, and stylish personal portfolio website** — built to showcase my projects, skills, and achievements with smooth animations and interactive UI.
+
+### 🌐 [👉 View Live Portfolio → my-portfolio-zeta-snowy-87.vercel.app](https://my-portfolio-zeta-snowy-87.vercel.app/)
 
 </div>
 
