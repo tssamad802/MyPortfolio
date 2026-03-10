@@ -43,6 +43,14 @@ const projects = [
     github: 'https://github.com/tssamad802/User-Management',
     demo: null,
   },
+  {
+    title: 'iron-core',
+    description:
+      'This is a gym dashboard for admin, members, and trainers.',
+    tags: ['PHP', 'MySQL', 'MVC', 'HTML/CSS'],
+    github: 'https://github.com/tssamad802/iron-core',
+    demo: null,
+  },
 ];
 
 const Projects = () => {
@@ -60,9 +68,8 @@ const Projects = () => {
           {projects.map((project, i) => (
             <div
               key={project.title}
-              className={`glass rounded-2xl overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
+              className={`glass rounded-2xl overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
               style={{ transitionDelay: isVisible ? `${i * 150}ms` : '0ms' }}
             >
               {/* Colored top bar */}

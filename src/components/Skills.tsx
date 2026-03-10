@@ -5,7 +5,7 @@ const skills = [
   { name: 'HTML', icon: Globe, level: 90 },
   { name: 'CSS', icon: Paintbrush, level: 85 },
   { name: 'JavaScript', icon: FileCode, level: 80 },
-  { name: 'PHP', icon: Code2, level: 70 },
+  { name: 'Core PHP', icon: Code2, level: 85 },
   { name: 'MariaDB', icon: Database, level: 65 },
   { name: 'WordPress', icon: Blocks, level: 75 },
   { name: 'Elementor', icon: LayoutTemplate, level: 80 },
