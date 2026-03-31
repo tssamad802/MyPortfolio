@@ -1,14 +1,15 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { Briefcase, MapPin, Calendar, Award } from 'lucide-react';
 
 const experiences = [
   {
     company: 'Gexton',
     location: 'Hyderabad, Sindh',
-    duration: 'Current',
+    duration: '6 weeks',
     role: 'Web Development Intern',
-    description: 'Currently working on real-world projects, building and maintaining web applications using modern tools and technologies.',
-    current: true,
+    description: 'Worked on real-world projects, building and maintaining web applications using modern tools and technologies. Successfully completed the internship and received a certificate of completion.',
+    current: false,
+    certified: true,
   },
   {
     company: 'Israin Solutions',
@@ -17,6 +18,7 @@ const experiences = [
     role: 'Web Development Intern',
     description: 'Developed responsive websites and collaborated with design teams to implement pixel-perfect UI components.',
     current: false,
+    certified: false,
   },
   {
     company: 'Rootlet Solutions',
@@ -25,6 +27,7 @@ const experiences = [
     role: 'Web Development Intern',
     description: 'Built WordPress websites, worked with Elementor page builder, and gained hands-on experience with PHP and databases.',
     current: false,
+    certified: false,
   },
 ];
 
@@ -55,13 +58,21 @@ const Experience = () => {
               {/* Card */}
               <div className={`ml-10 md:ml-0 md:w-[45%] ${i % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>
                 <div className="glass rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                  <div className="flex items-center gap-2 mb-1">
-                    {exp.current && <span className="text-[10px] font-bold uppercase tracking-wider bg-primary text-primary-foreground px-2 py-0.5 rounded-full">Current</span>}
-                    <span className="text-sm text-muted-foreground flex items-center gap-1"><Calendar className="h-3 w-3" />{exp.duration}</span>
+                  <div className="flex items-center gap-2 mb-1 flex-wrap">
+                    {exp.certified && (
+                      <span className="text-[10px] font-bold uppercase tracking-wider bg-green-500/20 text-green-500 border border-green-500/30 px-2 py-0.5 rounded-full flex items-center gap-1">
+                        <Award className="h-3 w-3" /> Certified
+                      </span>
+                    )}
+                    <span className="text-sm text-muted-foreground flex items-center gap-1">
+                      <Calendar className="h-3 w-3" />{exp.duration}
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{exp.company}</h3>
                   <p className="text-sm font-medium text-primary mb-1">{exp.role}</p>
-                  <p className="text-xs text-muted-foreground flex items-center gap-1 mb-3"><MapPin className="h-3 w-3" />{exp.location}</p>
+                  <p className="text-xs text-muted-foreground flex items-center gap-1 mb-3">
+                    <MapPin className="h-3 w-3" />{exp.location}
+                  </p>
                   <p className="text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
                 </div>
               </div>
